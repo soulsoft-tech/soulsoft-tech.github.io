@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Easy Camera — Privacy Policy</title>
+<!--
+    Self-contained on purpose: no external stylesheet, font or image. The page has to hold up
+    both on GitHub Pages and opened from the phone by the "Privacy policy" button in the app
+    settings, where a missing resource would leave a broken document.
+-->
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1a20;
+    --muted: #5d5766;
+    --rule: #e2dee8;
+    --box-bg: #f6f2fa;
+    --accent: #7a4a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17121c;
+      --fg: #f6ece2;
+      --muted: #c3b2a6;
+      --rule: #4a3e52;
+      --box-bg: #221a2a;
+      --accent: #ffc46b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+    max-width: 44rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.4rem; }
+  li { margin-bottom: .4rem; }
+  .updated { color: var(--muted); font-size: .95rem; margin-bottom: 2rem; }
+  .summary {
+    background: var(--box-bg);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    border-radius: 0 6px 6px 0;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .6rem; border-bottom: 1px solid var(--rule); }
+  th { color: var(--muted); font-weight: 600; }
+  code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: .9em; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .95rem; }
+  .todo { background: #ffe08a; color: #402c00; padding: 0 .3em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>Easy Camera — Privacy Policy</h1>
+<p class="updated">Last updated: 22 August 2026</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> Easy Camera collects no personal data whatsoever. It has no
+  internet access, no user accounts, no advertising and no analytics. Everything you record is
+  saved on your device and stays there.</p>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>Easy Camera (“the app”) is published by <span class="todo">PDan</span>.</p>
+<p>For any question about this policy or about the app, write to
+<a href="mailto:gaugeinvariante@gmail.com">gaugeinvariante@gmail.com</a>.</p>
+
+<h2>2. What the app does</h2>
+<p>Easy Camera is a hands-free recorder. You choose a capture mode — video with audio, video only,
+audio only, or photos — and press Start. From that moment the capture can carry on while the
+screen is off, while you use other applications, or with the phone resting on a stand, and the
+controls remain available in an ongoing notification.</p>
+<p>A capture never begins on its own. Nothing is recorded until you press Start, and while the
+camera or the microphone is in use, the Android privacy indicator stays visible and the ongoing
+notification cannot be dismissed.</p>
+
+<h2>3. Data collected: none</h2>
+<p>The app does not collect, store or transmit any personal data. In particular, it does not:</p>
+<ul>
+  <li>ask you to create an account or identify yourself in any way;</li>
+  <li>collect device identifiers, the advertising ID, location, contacts, your list of installed
+  apps, or any usage statistic;</li>
+  <li>include any analytics, crash-reporting or advertising library;</li>
+  <li>send anything to any server, ours or anybody else’s.</li>
+</ul>
+<p>This is not only a promise: the app <strong>does not request the
+<code>INTERNET</code> permission</strong>. Without it, Android gives the app no way to open a
+network connection at all. You can verify this yourself in the app’s permission list.</p>
+
+<h2>4. Your recordings</h2>
+<p>Video, audio and photos captured with Easy Camera are written to your device’s shared storage
+through Android’s MediaStore:</p>
+<ul>
+  <li>video and photos in <code>DCIM/Easy Camera</code>;</li>
+  <li>audio recordings in <code>Recordings/Easy Camera</code>, or in <code>Music/Easy Camera</code>
+  on devices where the Recordings folder does not exist.</li>
+</ul>
+<p>These files are yours. The app does not read them back, index them, copy them or send them
+anywhere; the only exception is the “open the last file” button, which simply hands the file you
+have just recorded to whichever gallery or player you choose. You can view, move and delete the
+files with any gallery or file manager, and deleting them there deletes them for good.</p>
+<p>Because these folders are shared storage, uninstalling Easy Camera does <em>not</em> delete your
+recordings: they remain on the device, as photos taken with the system camera would.</p>
+
+<h2>5. Permissions, and why each one is needed</h2>
+<p>Camera and microphone permissions are requested only when the capture mode you have selected
+actually needs them: in audio-only mode the camera permission is never requested, and the camera is
+never opened.</p>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td><code>CAMERA</code></td><td>To record video and take photos. Not requested in audio-only mode.</td></tr>
+  <tr><td><code>RECORD_AUDIO</code></td><td>To record the audio track and voice recordings. Not requested in video-only or photo mode.</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>To show the ongoing notification that carries the capture controls.</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_CAMERA</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>To let the capture continue while the app is not in the foreground, which is the purpose of the app. Android requires these to be declared, and shows the corresponding privacy indicator throughout.</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>To keep the processor awake during a capture, a countdown or a photo interval, so timing does not drift while the screen is off.</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>For the confirmation on start and stop, which with the screen off is the only feedback you get.</td></tr>
+</table>
+<p>Easy Camera deliberately requests <strong>no restricted-use permission</strong>: it does not use
+exact alarms, does not read the phone state, does not draw over other apps, and does not ask to be
+exempted from battery optimisation through a permission — when battery optimisation matters, it
+merely opens the ordinary system settings screen for you.</p>
+
+<h2>6. Settings backup performed by Android</h2>
+<p>If Android’s backup is enabled on your device, the system may copy the app’s settings file —
+your preferences: capture mode, resolution, timers, theme — into your Google account backup, and
+restore it when you set up a new phone. This is done by Android, not by Easy Camera, and is
+governed by Google’s own privacy policy; you can turn it off in your device’s system settings.</p>
+<p>Your recordings are never part of this backup: they live in shared storage, which no application
+backup rule reaches.</p>
+
+<h2>7. Third parties</h2>
+<p>No third party receives any data from this app. Easy Camera is built on Android’s own libraries
+(Jetpack, CameraX), which run entirely on the device and send nothing anywhere.</p>
+
+<h2>8. Children</h2>
+<p>Easy Camera is a general-purpose utility and is not directed to children. It collects no data
+from anyone, children included.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>Any change will be published on this page, with the date at the top updated. If a future version
+of the app ever changed how data is handled — which is not planned — the change would be described
+here before it took effect.</p>
+
+<h2>10. Contact</h2>
+<p><a href="mailto:gaugeinvariante@gmail.com">dnl.baldo@gmail.com</a></p>
+
+<footer>
+ <!-- <p>This policy is also available in <a href="privacy-policy-it.html">Italian</a>.</p> -->
+</footer>
+
+</body>
+</html>
